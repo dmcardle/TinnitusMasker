@@ -1,0 +1,85 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <!--
+         Eclipse complains that this FrameLayout is useless,
+         but if I put items outside of it, the app's title
+         is directly on top of them (in the z axis).
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+       	<!--
+	   		Radio Buttons for selecting a Masker.
+	    -->
+		<RadioGroup
+		    android:id="@+id/masker_radio_boxes"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+			
+			<RadioButton
+	            android:id="@+id/whiteRadioButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/whiteRadioLabel"
+	            android:checked="true"
+	            android:onClick="onRadioButtonClicked" />
+			
+			<RadioButton
+	            android:id="@+id/brownRadioButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/brownRadioLabel"
+	            android:onClick="onRadioButtonClicked" />
+			
+	        <RadioButton
+	            android:id="@+id/rainRadioButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rainRadioLabel"
+	            android:onClick="onRadioButtonClicked" />
+	        
+	       <RadioButton
+	            android:id="@+id/sineRadioButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/sineRadioLabel"
+	            android:onClick="onRadioButtonClicked" />
+	        
+	       
+	       
+	    </RadioGroup>    
+        
+        
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/play_button"
+                
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/play_button" />
+        </LinearLayout>
+
+        
+        
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Non-Looping Tinnitus Masker</string>
+    <string name="play_button">Play</string>
+	<string name="pause_button">Pause</string>
+    
+    <string name="whiteRadioLabel">White Noise</string>
+    <string name="brownRadioLabel">Brown Noise</string>
+    <string name="rainRadioLabel">Rain Sounds</string>
+    <string name="sineRadioLabel">Sine Wave</string>
+
+</resources>
