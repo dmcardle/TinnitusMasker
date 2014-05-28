@@ -8,16 +8,18 @@ people
 
 ## Implemented Features
 
-- White Noise
-- Brown Noise
+- **White Noise**. Simply uses a random number generator to choose amplitudes.
+  This has an equal power distribution.
+- **Brown Noise**. Implements Brownian motion via a [random
+  walk](http://en.wikipedia.org/wiki/Random_walk).
 
 ## In the Works
 
-- Rain Sounds.  Lots of rain sound apps and websites actually use a
+- **Rain Sounds**.  Lots of rain sound apps and websites actually use a
   pre-recorded loop. It can be jarring to the user when the loop restarts. I
   aim to solve this problem by generating rain sounds in real time. This might
   be hard! 
-- Tinnitus Matching.  This will be a tool to let the user determine which
+- **Tinnitus Matching**.  This will be a tool to let the user determine which
   frequency their Tinnitus is centered on.  It will use a series of
   higher-or-lower questions within the hearing frequency range with a series of
   questions to determine the frequency. For example, the computer might play a
